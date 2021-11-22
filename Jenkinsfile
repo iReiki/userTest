@@ -8,12 +8,6 @@ pipeline {
     
     stages {
         
-        stage('Git') {
-            steps {
-                git 'https://github.com/iReiki/userTest'
-            }
-        }
-        
         stage('Test') {
             steps {
                 sh "mvn test"
